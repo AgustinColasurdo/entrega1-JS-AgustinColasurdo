@@ -5,19 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <p>
-        Hola! Aca Agustin Colasurdo!
-        Les presento mi primer trabajo en JS, es un simulador de una tienda online, en donde se nos presentara un cuadro
-        de dialogo "prompt", en el cual nos pedira ingresar que articulos queremos comprar. Luego esos articulos se
-        sumaran a una constante llamada "Carrito", la cual acumulara estos datos ingresados en un "Array". Al mismo
-        tiempo posee una variable llamada "Contador", la cual lleva la cuenta de cuantos articulos se agregan al
-        carrito. Asi mismo esta variable esta sujetada a un condicional que hace que, al llegar a 5 productos, ejecute
-        un "Alert", señalando que el cliente ha obtenido un descuento. Espero su correccion y gracias!
-    </p>
+    <header class="encabezado">
+        <img class="logo" src="/img/logo-tienda.png" alt="logo Apple">
+        <h1>TIENDA APPLE</h1>
+        <h2>tu reseller Apple de confianza</h2>
+    </header>
+    <main>
+            <div class="tienda">
+                <div class="tarjeta">
+                    <h3>IPHONE 13</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/13tienda.png" alt=iphone 13">
+                    </div>
+                    <p class="precio-tienda">USD 655</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+                <div class="tarjeta">
+                    <h3>IPHONE 14</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/13tienda.png" alt="iphone 14">
+                    </div>
+                    <p class="precio-tienda">USD 690</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>AIRPODS</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/airpodstienda.png" alt="airpods">
+                    </div>
+                    <p class="precio-tienda">USD 320</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+                <div class="tarjeta">
+                    <h3>CARGADOR APPLE 20W</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/tiendacargador.png" alt="cargador">
+                    </div>
+                    <p class="precio-tienda">USD 90</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>BATTERY PACK APPLE</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/packtienda.png" alt="batteryu pack">
+                    </div>
+                    <p class="precio-tienda">USD 120</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>APPLEWATCH ULTRA</h3>
+                    <div class="img-container">
+                        <img class="img-tienda" src="/img/ultratienda.jpg" alt="ultra">
+                    </div>
+                    <p class="precio-tienda">USD 1000</p>
+                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
+                </div>
+            </div>
+    </main>
 
     <script src="main.js"></script>
 </body>

@@ -1,0 +1,77 @@
+.encabezado {  
+    display: flex;   
+    flex-direction: column;   
+    align-items: center;
+    background-color: #f8f8f8; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}  
+
+.logo {  
+    width: 100px;  
+    height: auto; 
+    margin-bottom: 10px; 
+}  
+
+h1 {  
+    font-size: 2rem;/  
+    color: #333; 
+    margin: 5px 0; 
+}  
+
+h2 {  
+    font-size: 1.2rem; 
+    color: #666;
+    margin: 0; 
+}  
+
+.tienda{
+    display: flex;
+}
+.tarjeta{
+    border: 5px, solid, black;
+    padding: 10px;
+    margin: 15px;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-container {  
+    width: 100%; 
+    max-width: 300px;  
+    height: 200px; 
+    overflow: hidden;  
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+}  
+
+.img-tienda {  
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+
+}  
+
+.carrito-tienda{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.carrito-tienda img {  
+    width: 40px;
+    height: auto; 
+}  
+.precio-tienda{
+    background-color: black;
+    border-radius: 15px;
+    color: yellow;
+    display: inline;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
