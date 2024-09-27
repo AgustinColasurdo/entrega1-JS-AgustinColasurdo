@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TIENDA APPLE</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Incluir SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -16,66 +18,17 @@
         <h2>tu reseller Apple de confianza</h2>
     </header>
     <main>
-            <div class="tienda">
-                <div class="tarjeta">
-                    <h3>IPHONE 13</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/13tienda.png" alt=iphone 13">
-                    </div>
-                    <p class="precio-tienda">USD 655</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
-                <div class="tarjeta">
-                    <h3>IPHONE 14</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/13tienda.png" alt="iphone 14">
-                    </div>
-                    <p class="precio-tienda">USD 690</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
+        <div class="tienda" id="productos-container">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </div>
 
-                <div class="tarjeta">
-                    <h3>AIRPODS</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/airpodstienda.png" alt="airpods">
-                    </div>
-                    <p class="precio-tienda">USD 320</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
-                <div class="tarjeta">
-                    <h3>CARGADOR APPLE 20W</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/tiendacargador.png" alt="cargador">
-                    </div>
-                    <p class="precio-tienda">USD 90</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
-
-                <div class="tarjeta">
-                    <h3>BATTERY PACK APPLE</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/packtienda.png" alt="batteryu pack">
-                    </div>
-                    <p class="precio-tienda">USD 120</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
-
-                <div class="tarjeta">
-                    <h3>APPLEWATCH ULTRA</h3>
-                    <div class="img-container">
-                        <img class="img-tienda" src="/img/ultratienda.jpg" alt="ultra">
-                    </div>
-                    <p class="precio-tienda">USD 1000</p>
-                   <button class="carrito-tienda"> <img src="/img/carritotienda.png" alt="carrito"></button>
-                </div>
-            </div>
-
-            <div id="cart-container">  
-                <h3>Carrito de Compras</h3>  
-                <div id="cart-items"></div>  
-                <p id="cart-total"></p>  
-                <button id="clear-cart" class="btn-clear">Borrar Carrito</button>  
-            </div>
+        <div id="cart-container">
+            <h3>Carrito de Compras</h3>
+            <div id="cart-items"></div>
+            <p id="cart-total"></p>
+            <button id="clear-cart" class="btn-clear">Borrar Carrito</button>
+        </div>
+    </main>
 
     <script src="main.js"></script>
 </body>

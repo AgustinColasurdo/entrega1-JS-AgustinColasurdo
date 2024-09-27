@@ -27,25 +27,33 @@ h2 {
 
 .tienda{
     display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en pantallas pequeñas */
+    justify-content: center;
 }
 .tarjeta{
-    border: 5px, solid, black;
+    border: 5px solid black; /* Corregido el uso de comas */
     padding: 10px;
     margin: 15px;
-    height: 300px;
-    width: 350px;
+    height: 400px; /* Aumentado para mejor visualización */
+    width: 300px; /* Ajustado para adaptarse mejor al diseño */
     position: relative;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadido sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
 }
 
 .img-container {  
     width: 100%; 
-    max-width: 300px;  
+    max-width: 250px;  
     height: 200px; 
     overflow: hidden;  
     display: flex;  
     justify-content: center; 
     align-items: center;
+    margin-bottom: 10px;
 }  
 
 .img-tienda {  
@@ -59,13 +67,16 @@ h2 {
     height: 50px;
     width: 50px;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 .carrito-tienda img {  
-    width: 40px;
+    width: 100%;
     height: auto; 
-}  
+}
 .precio-tienda{
     background-color: black;
     border-radius: 15px;
@@ -73,23 +84,38 @@ h2 {
     display: inline;
     padding: 10px;
     position: absolute;
-    bottom: 10px;
+    top: 10px;
+    left: 10px;
 }
 
 #cart-container {  
     background-color: #fff;  
     border: 1px solid #ddd;  
     border-radius: 8px;  
-    margin: 20px;  
+    margin: 20px auto;  
     padding: 15px;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
-}  
+    max-width: 400px;
+}
 
 #cart-items {  
     margin: 10px 0;  
-}  
+}
 
 #cart-total {  
     font-weight: bold;  
     color: #333;  
 } 
+
+.btn-clear {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-clear:hover {
+    background-color: #e60000;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "IPHONE 13",
+        "precio": 655,
+        "imagen": "/img/13tienda.png"
+    },
+    {
+        "id": 2,
+        "nombre": "IPHONE 14",
+        "precio": 690,
+        "imagen": "/img/14tienda.png"
+    },
+    {
+        "id": 3,
+        "nombre": "AIRPODS",
+        "precio": 320,
+        "imagen": "/img/airpodstienda.png"
+    },
+    {
+        "id": 4,
+        "nombre": "CARGADOR APPLE 20W",
+        "precio": 90,
+        "imagen": "/img/tiendacargador.png"
+    },
+    {
+        "id": 5,
+        "nombre": "BATTERY PACK APPLE",
+        "precio": 120,
+        "imagen": "/img/packtienda.png"
+    },
+    {
+        "id": 6,
+        "nombre": "APPLEWATCH ULTRA",
+        "precio": 1000,
+        "imagen": "/img/ultratienda.jpg"
+    }
+]
